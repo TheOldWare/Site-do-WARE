@@ -1,0 +1,108 @@
+body{
+    background: radial-gradient(circle at 30% 30%, rgba(80, 70, 110, 0.6), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(100, 60, 120, 0.4), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(90, 100, 150, 0.5), transparent 50%),
+              linear-gradient(135deg, rgba(25, 25, 40, 1), rgba(45, 30, 60, 1));
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+.container{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(37, 31, 37);
+    padding: 10px 20px;
+    border-radius: 16px;
+    margin: 30px auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    border-style: outset;
+    animation: borderColorChange 4s infinite;
+}
+@keyframes borderColorChange {
+    0% { border-color: rgba(100, 83, 146);}
+    50% { border-color: rgb(146, 137, 231);}
+    100% { border-color: rgb(100, 83, 146);}
+}
+
+.title-ware{
+    font-size: 4rem;
+    color: rgb(137, 151, 231);
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.747);
+    letter-spacing: 5px;
+}
+
+.hr-ware{
+    width: 89%;
+    height: 8px;
+    background-color: rgb(146, 137, 231);
+    border: none;
+    margin: 0;
+    position: relative;
+    top: -50px;
+    border-radius: 8px;
+}
+
+.subtitle{
+    font-size: 2.5rem;
+    color: rgb(137, 231, 142);
+    letter-spacing: 2px;
+}
+
+.text-ware{
+    font-size: 1.9rem;
+    color: rgb(0, 255, 136);
+    width: 80%;
+    letter-spacing: 1px;
+}
+
+.photo-moments{
+    width: 16%;
+    height: 20%;
+    position: absolute;
+    border-radius: 30%;
+    top: 15%;
+    left: 70%;
+    filter: invert(90%) blur(2px);
+    cursor: pointer;
+    transition: filter 0.5s ease;
+}
+.photo-moments:hover {
+    filter: invert(90%) blur(0);
+}
+
+.music-moments{
+    width: 16%;
+    height: 20%;
+    position: absolute;
+    border-radius: 10%;
+    top: 40%;
+    left: 55%;
+    filter: invert(90%) blur(2px);
+    cursor: pointer;
+    transition: filter 0.5s ease;
+}
+.music-moments:hover{
+    filter: invert(90%) blur(0);
+}
+
+.code-moments{
+    width: 16%;
+    height: 20%;
+    position: absolute;
+    border-radius: 10%;
+    top: 65%;
+    left: 70%;
+    filter: invert(90%) blur(2px);
+    cursor: pointer;
+    transition: filter 0.5s ease;
+}
+.code-moments:hover{
+    filter: invert(90%) blur(0);
+}

@@ -1,0 +1,9 @@
+body{
+    background: radial-gradient(circle at 30% 30%, rgba(90, 202, 15, 0.623), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(38, 197, 136, 0.63), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(136, 255, 0, 0.719), transparent 50%),
+              linear-gradient(135deg, rgb(0, 255, 234), rgba(100, 209, 37, 0.904));
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(252, 252, 252);
+}
