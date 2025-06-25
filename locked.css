@@ -1,0 +1,87 @@
+body{
+    background: radial-gradient(circle at 30% 30%, rgb(9, 42, 65), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(12, 5, 51, 0.4), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(90, 100, 150, 0.5), transparent 50%),
+              linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #3a9dee;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 4%;
+    left: 21%;
+    border-style: solid;
+    padding: 20px;
+    border-width: 5px;
+    animation: borderColorChange 3s infinite;
+}
+@keyframes borderColorChange {
+    0% { border-color: #3aacee; }
+    50% { border-color: #010820; }
+    100% { border-color: #3aacee; }
+}
+
+.ray-flower{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.ray-flower:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ray-mirror{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(40px);
+    z-index: 0;
+}
+
+.ray-mirror:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ray-yumy{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.ray-yumy:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}

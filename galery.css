@@ -1,9 +1,135 @@
 body{
-    background: radial-gradient(circle at 30% 30%, rgba(67, 129, 86, 0.6), transparent 40%),
-              radial-gradient(circle at 70% 70%, rgba(100, 158, 212, 0.829), transparent 40%),
-              radial-gradient(circle at 50% 50%, rgba(102, 121, 226, 0.5), transparent 50%),
-              linear-gradient(135deg, rgb(79, 88, 172), rgb(109, 116, 219));
+    background: radial-gradient(circle at 30% 30%, rgba(34, 53, 94, 0.6), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(57, 52, 136, 0.829), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.5), transparent 50%),
+              linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 0, 0));
   background-attachment: fixed;
   background-size: cover;
   color: white;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #3aee52;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 4%;
+    left: 21%;
+    border-style: solid;
+    padding: 20px;
+    border-width: 5px;
+    animation: borderColorChange 3s infinite;
+}
+@keyframes borderColorChange {
+    0% { border-color: #3aee52; }
+    50% { border-color: #96cfac; }
+    100% { border-color: #3aee52; }
+}
+
+.locked{
+  width: 5%;
+  height: 10%;
+  position: absolute;
+  top: 8%;
+  left: 13%;
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.img-ware1{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transition: transform 0.6s ease, filter 1s ease;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.img-ware1:hover {
+  z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.img-ware2{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    transition: transform 0.6s ease, filter 1s ease;
+    filter: blur(3px);
+    z-index: 0;
+}
+
+.img-ware2:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ray-flower{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(45px);
+    z-index: 0;
+}
+
+.ray-flower:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ray-mirror{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 30%;
+    left: 71%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(45px);
+    z-index: 0;
+}
+
+.ray-mirror:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ray-yumy{
+    width: 20%;
+    height: 20%;
+    border-radius: 6%;
+    position: absolute;
+    top: 52%;
+    left: 8%;
+    transition: transform 0.6s ease, filter 1000s ease;
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.ray-yumy:hover {
+    z-index: 1;
+    transform: scale(1.4);
+    filter: blur(0px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
