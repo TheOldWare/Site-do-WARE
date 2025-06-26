@@ -36,7 +36,7 @@ body{
     position: absolute;
     top: 30%;
     left: 8%;
-    transition: transform 0.6s ease, filter 20s ease;
+    transition: transform 0.6s ease, filter 10s ease;
     filter: blur(40px);
     z-index: 0;
 }
@@ -55,7 +55,7 @@ body{
     position: absolute;
     top: 30%;
     left: 29%;
-    transition: transform 0.6s ease, filter 20s ease;
+    transition: transform 0.6s ease, filter 10s ease;
     filter: blur(40px);
     z-index: 0;
 }
@@ -74,7 +74,7 @@ body{
     position: absolute;
     top: 30%;
     left: 50%;
-    transition: transform 0.6s ease, filter 20s ease;
+    transition: transform 0.6s ease, filter 10s ease;
     filter: blur(50px);
     z-index: 0;
 }
