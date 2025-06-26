@@ -1,9 +1,143 @@
 body{
-    background: radial-gradient(circle at 30% 30%, rgba(90, 202, 15, 0.623), transparent 40%),
-              radial-gradient(circle at 70% 70%, rgba(38, 197, 136, 0.63), transparent 40%),
-              radial-gradient(circle at 50% 50%, rgba(136, 255, 0, 0.719), transparent 50%),
-              linear-gradient(135deg, rgb(0, 255, 234), rgba(100, 209, 37, 0.904));
+    background: radial-gradient(circle at 30% 30%, rgba(0, 0, 0, 0.623), transparent 40%),
+              radial-gradient(circle at 70% 70%, rgba(56, 56, 56, 0.63), transparent 40%),
+              radial-gradient(circle at 50% 50%, rgba(46, 46, 46, 0.479), transparent 50%),
+              linear-gradient(135deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.904));
     background-attachment: fixed;
     background-size: cover;
     color: rgb(252, 252, 252);
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #eedede;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 4%;
+    left: 29%;
+    border-style: solid;
+    padding: 20px;
+    border-width: 5px;
+    animation: borderColorChange 3s infinite;
+}
+
+@keyframes borderColorChange {
+    0% { border-color: #838383; }
+    50% { border-color: #ffffff; }
+    100% { border-color: #8b8b8b; }
+}
+
+.bitch-please{
+    width: 21%;
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.bitch-please:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.illusions{
+    width: 21%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.illusions:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.digital-animal{
+    width: 21%;
+    position: absolute;
+    top: 30%;
+    left: 52%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.digital-animal:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.jump-around{
+    width: 21%;
+    position: absolute;
+    top: 30%;
+    left: 74%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.jump-around:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.zookeeper{
+    width: 22%;
+    position: absolute;
+    top: 51%;
+    left: 8%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.zookeeper:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.hooligang{
+    width: 21%;
+    position: absolute;
+    top: 51%;
+    left: 31%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.hooligang:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.imaginary-place{
+    width: 21%;
+    position: absolute;
+    top: 51%;
+    left: 53%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.imaginary-place:hover{
+    transform: scale(1);
+    z-index: 1;
+}
+
+.pump-it{
+    width: 21%;
+    position: absolute;
+    top: 51%;
+    left: 75%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.pump-it:hover{
+    transform: scale(1);
+    z-index: 1;
 }

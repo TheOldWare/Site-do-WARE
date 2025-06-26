@@ -47,7 +47,7 @@ body{
     top: 30%;
     left: 8%;
     transition: transform 0.6s ease, filter 1s ease;
-    filter: blur(3px);
+    filter: blur(2px);
     z-index: 0;
 }
 
@@ -66,68 +66,11 @@ body{
     top: 30%;
     left: 29%;
     transition: transform 0.6s ease, filter 1s ease;
-    filter: blur(3px);
+    filter: blur(2px);
     z-index: 0;
 }
 
 .img-ware2:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-flower{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transition: transform 0.6s ease, filter 1000s ease;
-    filter: blur(45px);
-    z-index: 0;
-}
-
-.ray-flower:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-mirror{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 71%;
-    transition: transform 0.6s ease, filter 1000s ease;
-    filter: blur(45px);
-    z-index: 0;
-}
-
-.ray-mirror:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-yumy{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 52%;
-    left: 8%;
-    transition: transform 0.6s ease, filter 1000s ease;
-    filter: blur(50px);
-    z-index: 0;
-}
-
-.ray-yumy:hover {
     z-index: 1;
     transform: scale(1.4);
     filter: blur(0px);
