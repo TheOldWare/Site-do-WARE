@@ -119,4 +119,9 @@ body{
     top: 13%;
     left: 47%;
     font-size: 25px;
+    transition: transform 0.3s;
+}
+
+.visit-container:hover{
+    transform: scale(1.3);
 }
