@@ -1,6 +1,6 @@
 window.onload = function() {
     let senha = prompt("Senha");
-    if (senha == "LoveYouRay") {
+    if (senha == "Magicwizard") {
         alert("Senha correta!");
     } else {
         alert("Senha Icorreta!")
