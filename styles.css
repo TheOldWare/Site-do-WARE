@@ -114,6 +114,7 @@ body{
 }
 
 .visit-container {
+    width: 10%;
     position: absolute;
     top: 13%;
     left: 47%;
