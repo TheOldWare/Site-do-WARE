@@ -281,3 +281,17 @@ body{
     transform: scale(1);
     z-index: 1;
 }
+
+.dare-gorillaz{
+    width: 21%;
+    position: absolute;
+    top: 138%;
+    left: 8%;
+    transition: transform 0.2s;
+    z-index: 0;
+}
+
+.dare-gorillaz:hover{
+    transform: scale(1);
+    z-index: 1;
+}
