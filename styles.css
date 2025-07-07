@@ -141,3 +141,53 @@ body{
     transform: scale(1.3);
     filter: invert(90%) blur(0);
 }
+
+.clube-container {
+    font-family: 'Courier New', Courier, monospace;
+    color: lightblue;
+    width: 28%;
+    padding: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+    position: absolute;
+    top: 130%;
+    left: 15%;
+}
+
+.clube-image {
+    width: 50%;
+    height: auto;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.clube-button {
+    background-color: rgb(146, 137, 231);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    top: 70%;
+    left: 54%;
+}
+.clube-button:hover {
+    background-color: rgb(100, 83, 146);
+    transform: scale(1.1);
+}
+
+.new-container {
+    position: absolute;
+    top: 37%;
+    left: 18%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.new-container:hover {
+    transform: scale(1.1);
+}
