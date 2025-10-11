@@ -42,17 +42,40 @@ body{
   cursor: pointer;
 }
 
+/* Seção de galeria: Organiza imagens em grade flexível */
+.photo1 {
+  display: flex; /* Usa Flexbox para organizar imagens */
+  flex-wrap: wrap; /* Permite rearranjo em telas menores */
+  justify-content: center; /* Centraliza imagens horizontalmente */
+  gap: 0.5rem; /* Espaçamento entre imagens */
+  margin: 2rem auto; /* Centraliza com margens */
+  max-width: 1200px; /* Limita largura em telas grandes */
+}
+
 .img-ware1,
 .img-ware2{
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    transition: transform 0.5s ease, filter 1s ease;
+    filter: blur(2px);
+    z-index: 0;
+}
+
+.noitenublada{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
     transition: transform 0.5s ease, filter 1s ease;
     filter: blur(2px);
     z-index: 0;
 }
 
 .img-ware1:hover,
-.img-ware2:hover{
+.img-ware2:hover,
+.noitenublada:hover{
     z-index: 1;
     transform: scale(1.0);
     filter: blur(0px);
