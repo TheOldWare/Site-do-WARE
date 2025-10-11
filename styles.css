@@ -1,229 +1,219 @@
+/* Reset CSS: Zera margens e paddings padrão e usa border-box para tamanhos previsíveis */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove margens padrão para evitar espaçamentos indesejados */
+  padding: 0; /* Remove paddings padrão para controle total */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
 }
 
+/* Body: Define o fundo gradiente e organiza o layout em coluna */
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace; /* Fonte com estilo nerd/tech */
   background: radial-gradient(circle at 30% 30%, rgba(80, 70, 110, 0.6), transparent 40%),
               radial-gradient(circle at 70% 70%, rgba(100, 60, 120, 0.4), transparent 40%),
               radial-gradient(circle at 50% 50%, rgba(90, 100, 150, 0.5), transparent 50%),
-              linear-gradient(135deg, rgba(25, 25, 40, 1), rgba(45, 30, 60, 1));
-  background-attachment: fixed;
-  background-size: cover;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+              linear-gradient(135deg, rgba(25, 25, 40, 1), rgba(45, 30, 60, 1)); /* Fundo com gradientes roxos */
+  background-attachment: fixed; /* Fundo fixo durante rolagem */
+  background-size: cover; /* Cobre toda a área da tela */
+  color: white; /* Cor padrão do texto */
+  min-height: 100vh; /* Garante que o fundo cubra toda a altura da tela */
+  display: flex; /* Organiza header e main em layout flexível */
+  flex-direction: column; /* Empilha seções verticalmente para responsividade */
 }
 
+/* Container: Centraliza o conteúdo com largura responsiva */
 .container {
-  background-color: rgb(37, 31, 37);
-  padding: 1rem;
-  border-radius: 16px;
-  margin: 2rem auto;
-  max-width: 600px; /* Limite para evitar esticamento */
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-style: outset;
-  animation: borderColorChange 4s infinite;
+  background-color: rgb(37, 31, 37); /* Fundo escuro para contraste */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 16px; /* Bordas arredondadas */
+  margin: 2rem auto; /* Centraliza com margens automáticas */
+  max-width: 600px; /* Limita largura em telas grandes */
+  width: 90%; /* Fluido para telas menores */
+  display: flex; /* Alinha elementos internos (título, texto) em coluna */
+  flex-direction: column; /* Empilha conteúdo verticalmente */
+  align-items: center; /* Centraliza texto e outros elementos */
+  border-style: outset; /* Borda com estilo 3D */
+  animation: borderColorChange 4s infinite; /* Animação de mudança de cor na borda */
 }
 
+/* Animação para a borda do container */
 @keyframes borderColorChange {
-  0% { border-color: rgba(100, 83, 146, 1); }
-  50% { border-color: rgb(146, 137, 231); }
-  100% { border-color: rgba(100, 83, 146, 1); }
+  0% { border-color: rgba(100, 83, 146, 1); } /* Cor inicial */
+  50% { border-color: rgb(146, 137, 231); } /* Cor intermediária */
+  100% { border-color: rgba(100, 83, 146, 1); } /* Volta à cor inicial */
 }
 
+/* Título principal: Usa display: block (padrão do h1) para texto fixado */
 .title-ware {
-  font-size: 3rem; /* Reduzido para melhor escalabilidade */
-  color: rgb(137, 151, 231);
-  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.747);
-  letter-spacing: 3px;
-  text-align: center;
+  font-size: 3rem; /* Tamanho grande para destaque */
+  color: rgb(137, 151, 231); /* Cor azul clara */
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.747); /* Sombra para efeito 3D */
+  letter-spacing: 3px; /* Espaçamento entre letras */
+  text-align: center; /* Centraliza para responsividade */
 }
 
+/* Linha decorativa: Separa título do subtítulo */
 .hr-ware {
-  width: 100%;
-  height: 8px;
-  background-color: rgb(146, 137, 231);
-  border: none;
-  border-radius: 8px;
-  margin: 1rem 0;
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  height: 8px; /* Espessura da linha */
+  background-color: rgb(146, 137, 231); /* Cor azul */
+  border: none; /* Remove borda padrão */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin: 1rem 0; /* Espaçamento vertical */
 }
 
+/* Subtítulo: Texto secundário com cor contrastante */
 .subtitle {
-  font-size: 1.8rem;
-  color: rgb(137, 231, 142);
-  letter-spacing: 2px;
-  text-align: center;
+  font-size: 1.8rem; /* Tamanho menor que o título */
+  color: rgb(137, 231, 142); /* Verde claro */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  text-align: center; /* Centraliza para responsividade */
 }
 
+/* Texto introdutório: Descrição do site */
 .text-ware {
-  font-size: 1.2rem;
-  color: rgb(0, 255, 136);
-  text-align: center;
+  font-size: 1.2rem; /* Tamanho legível */
+  color: rgb(0, 255, 136); /* Verde vibrante */
+  text-align: center; /* Centraliza para responsividade */
 }
 
+/* Seção de ícones: Organiza ícones em grade flexível */
 .icons-acess {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem auto;
-  max-width: 1200px;
+  display: flex; /* Usa Flexbox para organizar ícones */
+  flex-wrap: wrap; /* Permite rearranjo em telas menores */
+  justify-content: center; /* Centraliza ícones horizontalmente */
+  gap: 2rem; /* Espaçamento uniforme entre ícones */
+  margin: 2rem auto; /* Centraliza com margens */
+  max-width: 1200px; /* Limita largura em telas grandes */
 }
 
+/* Contêiner de ícone: Define tamanho fixo para cada link SVG */
 .icon-link {
-  display: block;
-  width: 100px; /* Tamanho fixo para consistência */
-  height: 100px;
+  display: block; /* Garante que o link ocupe o espaço definido e seja clicável */
+  width: 100px; /* Tamanho base para ícones */
+  height: 100px; /* Altura fixa para consistência */
 }
 
+/* Estilo comum para ícones SVG: Efeitos de hover e tamanho responsivo */
 .photo-moments,
 .music-moments,
 .code-moments,
 .projects {
-  width: 100%;
-  height: 100%;
-  filter: invert(90%) blur(2px);
-  cursor: pointer;
-  transition: filter 0.5s ease, transform 0.5s ease;
-  border-radius: 10px;
+  width: 100%; /* Ocupa toda a largura do .icon-link */
+  height: 100%; /* Ocupa toda a altura do .icon-link */
+  filter: invert(90%) blur(2px); /* Efeito inicial com blur */
+  cursor: pointer; /* Mostra que é clicável */
+  transition: filter 0.5s ease, transform 0.5s ease; /* Transições suaves */
+  border-radius: 10px; /* Bordas arredondadas */
 }
 
+/* Efeito de hover para ícones: Remove blur e aumenta tamanho */
 .photo-moments:hover,
 .music-moments:hover,
 .code-moments:hover,
 .projects:hover {
-  filter: invert(90%) blur(0);
-  transform: scale(1.2);
+  filter: invert(90%) blur(0); /* Remove blur no hover */
+  transform: scale(1.2); /* Aumenta o ícone para destaque */
 }
 
+/* Seção do contador de visitantes: Centralizado */
 .visit-container {
-  text-align: center;
-  margin: 2rem auto;
-  font-size: 1.2rem;
-  transition: transform 0.3s;
+  text-align: center; /* Centraliza texto e contador */
+  margin: 2rem auto; /* Espaçamento vertical e centralização */
+  font-size: 1.2rem; /* Tamanho legível */
+  transition: transform 0.3s; /* Efeito de hover */
 }
-
 .visit-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta levemente no hover */
 }
 
+/* Seção do Clube do WARE: Contêiner com fundo escuro */
 .clube-container {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 16px;
-  padding: 1rem;
-  max-width: 600px;
-  width: 90%;
-  margin: 2rem auto;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  border-radius: 16px; /* Bordas arredondadas */
+  padding: 1rem; /* Espaçamento interno */
+  max-width: 600px; /* Limita largura em telas grandes */
+  width: 90%; /* Fluido para telas menores */
+  margin: 2rem auto; /* Centraliza com margens */
+  text-align: center; /* Centraliza conteúdo interno */
 }
 
+/* Título do clube: Texto destacado */
 .clube-title {
-  font-size: 1.8rem;
-  color: lightblue;
+  font-size: 1.8rem; /* Tamanho para destaque */
+  color: lightblue; /* Cor clara para contraste */
 }
 
+/* Texto do clube: Descrição */
 .clube-text {
-  font-size: 1.2rem;
-  color: lightblue;
-  margin: 1rem 0;
+  font-size: 1.2rem; /* Tamanho legível */
+  color: lightblue; /* Cor clara */
+  margin: 1rem 0; /* Espaçamento vertical */
 }
 
+/* Imagem do clube: Responsiva com largura máxima */
 .clube-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  margin: 1rem 0;
+  max-width: 100%; /* Não ultrapassa o contêiner */
+  height: auto; /* Mantém proporção */
+  border-radius: 16px; /* Bordas arredondadas */
+  margin: 1rem 0; /* Espaçamento vertical */
 }
 
+/* Botão do clube: Interativo e responsivo */
 .clube-button {
-  background-color: rgb(146, 137, 231);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: rgb(146, 137, 231); /* Cor azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda padrão */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Mostra que é clicável */
+  font-size: 1rem; /* Tamanho legível */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
 }
-
 .clube-button:hover {
-  background-color: rgb(100, 83, 146);
-  transform: scale(1.1);
+  background-color: rgb(100, 83, 146); /* Cor mais escura no hover */
+  transform: scale(1.1); /* Aumenta levemente */
 }
 
+/* Seção do botão do novo site: Centralizado */
 .new-container {
-  text-align: center;
-  margin: 2rem auto;
+  text-align: center; /* Centraliza o botão */
+  margin: 2rem auto; /* Espaçamento vertical e centralização */
 }
 
+/* Botão do novo site: Estilo igual ao clube-button */
 .new-site {
-  background-color: rgb(146, 137, 231);
-  color: white;
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s, transform 0.3s;
+  background-color: rgb(146, 137, 231); /* Cor azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda padrão */
+  padding: 1rem 2rem; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Mostra que é clicável */
+  font-size: 1rem; /* Tamanho legível */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
 }
-
 .new-site:hover {
-  background-color: rgb(100, 83, 146);
-  transform: scale(1.1);
+  background-color: rgb(100, 83, 146); /* Cor mais escura no hover */
+  transform: scale(1.1); /* Aumenta levemente */
 }
 
-/* Media Queries */
+/* Media Queries: Ajustes para responsividade em telas menores */
+
+/* Tablets (<768px): Reduz tamanhos para melhor ajuste */
 @media (max-width: 768px) {
-  .title-ware {
-    font-size: 2rem;
-  }
-  .subtitle {
-    font-size: 1.5rem;
-  }
-  .text-ware {
-    font-size: 1rem;
-  }
-  .container,
-  .clube-container {
-    width: 95%;
-  }
-  .icon-link {
-    width: 80px;
-    height: 80px;
-  }
-  .clube-button,
-  .new-site {
-    width: 100%;
-    padding: 0.8rem;
-  }
+  .title-ware { font-size: 2rem; } /* Reduz título */
+  .subtitle { font-size: 1.5rem; } /* Reduz subtítulo */
+  .text-ware { font-size: 1rem; } /* Reduz texto */
+  .container, .clube-container { width: 95%; } /* Aumenta largura para preencher tela */
+  .icon-link { width: 80px; height: 80px; } /* Ícones menores */
+  .clube-button, .new-site { width: 100%; padding: 0.8rem; } /* Botões ocupam toda a largura */
 }
 
+/* Celulares pequenos (<480px): Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
-  .title-ware {
-    font-size: 1.5rem;
-  }
-  .subtitle {
-    font-size: 1.2rem;
-  }
-  .text-ware {
-    font-size: 0.9rem;
-  }
-  .container,
-  .clube-container {
-    padding: 0.5rem;
-  }
-  .icon-link {
-    width: 60px;
-    height: 60px;
-  }
-  .visit-container {
-    font-size: 1rem;
-  }
+  .title-ware { font-size: 1.5rem; } /* Título ainda menor */
+  .subtitle { font-size: 1.2rem; } /* Subtítulo menor */
+  .text-ware { font-size: 0.9rem; } /* Texto menor */
+  .container, .clube-container { padding: 0.5rem; } /* Menos padding */
+  .icon-link { width: 60px; height: 60px; } /* Ícones bem pequenos */
+  .visit-container { font-size: 1rem; } /* Texto do contador menor */
 }
