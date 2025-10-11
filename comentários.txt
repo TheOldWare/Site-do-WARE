@@ -1,0 +1,58 @@
+# HTML
+
+<header> -> Importante para separar títulos do conteúdo principal.
+
+<main> -> Importante para deixar todo o conteúdo do body organizado e separado do header.
+
+<section> -> Importante para ajustar e separar blocos flexíveis.
+
+
+# CSS
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} -> Faz um reset no CSS, permitindo que tire os limites do navegador.
+
+display: flex; -> Organiza elementos em linhas ou colunas com Flexbox para layouts responsivos.
+
+flex-wrap: wrap; -> Permite rearranjo de elementos em telas menores, como imagens em colunas.
+
+justify-content: center; -> Centraliza elementos horizontalmente, como imagens na galeria.
+
+gap: 1rem; -> Adiciona espaçamento uniforme entre elementos, como imagens ou ícones.
+
+margin: 2rem auto; -> Centraliza com margens automáticas para contêineres responsivos.
+
+max-width: 1200px; -> Limita largura em telas grandes para manter legibilidade.
+
+width: 300px; -> Define tamanho base fixo para imagens, mantendo consistência.
+
+height: 300px; -> Define altura fixa para imagens, mantendo consistência.
+
+max-width: 100%; -> Impede que imagens ultrapassem o contêiner pai, garantindo responsividade.
+
+object-fit: cover; -> Cobre o contêiner sem distorcer proporções de imagens.
+
+transition: transform 0.5s ease, filter 1s ease; -> Aplica transições suaves para efeitos de hover, como zoom e desfoque.
+
+filter: blur(2px); -> Adiciona desfoque inicial em imagens para efeito visual.
+
+z-index: 0; -> Define camada base para imagens, evitando sobreposições.
+
+border-radius: 10px; -> Arredonda bordas de imagens para estilo visual.
+
+z-index: 1; -> Traz imagem para frente no hover, destacando-a.
+
+transform: scale(1.1); -> Aumenta levemente a imagem no hover para destaque.
+
+filter: blur(0); -> Remove desfoque no hover para clareza.
+
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); -> Adiciona sombra no hover para profundidade.
+
+cursor: pointer; -> Mostra que a imagem é interativa, melhorando usabilidade.
+
+@media (max-width: 768px); -> Ajusta estilos para tablets, reduzindo tamanhos de imagens.
+
+@media (max-width: 480px); -> Ajusta estilos para celulares pequenos, reduzindo ainda mais os tamanhos.
