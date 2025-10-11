@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background: radial-gradient(circle at 30% 30%, rgb(9, 42, 65), transparent 40%),
               radial-gradient(circle at 70% 70%, rgba(12, 5, 51, 0.4), transparent 40%),
@@ -6,20 +12,17 @@ body{
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo{
     text-align: center;
-    font-size: 3.5em;
-    font-weight: bold;
-    margin-top: 20px;
+    font-size: 3rem;
     color: #3a9dee;
-    font-family: 'Courier New', Courier, monospace;
-    position: absolute;
-    top: 4%;
-    left: 21%;
     border-style: solid;
-    padding: 20px;
+    padding: 10px;
     border-width: 5px;
     animation: borderColorChange 3s infinite;
 }
@@ -27,99 +30,4 @@ body{
     0% { border-color: #3aacee; }
     50% { border-color: #010820; }
     100% { border-color: #3aacee; }
-}
-
-.ray-flower{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 8%;
-    transition: transform 0.6s ease, filter 10s ease;
-    filter: blur(40px);
-    z-index: 0;
-}
-
-.ray-flower:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-mirror{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 29%;
-    transition: transform 0.6s ease, filter 10s ease;
-    filter: blur(45px);
-    z-index: 0;
-}
-
-.ray-mirror:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-yumy{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transition: transform 0.6s ease, filter 10s ease;
-    filter: blur(40px);
-    z-index: 0;
-}
-
-.ray-yumy:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-flower2{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 30%;
-    left: 71%;
-    transition: transform 0.6s ease, filter 10s ease;
-    filter: blur(40px);
-    z-index: 0;
-}
-
-.ray-flower2:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-.ray-flower3{
-    width: 20%;
-    height: 20%;
-    border-radius: 6%;
-    position: absolute;
-    top: 52%;
-    left: 8%;
-    transition: transform 0.6s ease, filter 10s ease;
-    filter: blur(40px);
-    z-index: 0;
-}
-
-.ray-flower3:hover {
-    z-index: 1;
-    transform: scale(1.4);
-    filter: blur(0px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
